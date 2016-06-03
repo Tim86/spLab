@@ -58,6 +58,6 @@
     }
 }
 
-var autocompleteField = new Tahoe.Forms.AutocompleteField("OM_ComplaintContactTitle");
-autocompleteField.bindAutocomplete("Customers", "Title"); // OM_ComplaintCustomerID is not on the companies list!?
+var autocompleteField = new Tahoe.Forms.AutocompleteField("CustomerTitle");
+autocompleteField.bindAutocomplete("Customers", "Title");
 
