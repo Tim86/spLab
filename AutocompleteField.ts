@@ -58,13 +58,6 @@
     }
 }
 
-var autocompleteField = new OneMed.Customers.AutocompleteField("Customers", "OM_ComplaintCustomerName");
-autocompleteField.bindAutocomplete("OM_CustomerName", "OM_ComplaintCustomerID", "OM_CustomerID"); // OM_ComplaintCustomerID is not on the companies list!?
+var autocompleteField = new Tahoe.Forms.AutocompleteField("OM_ComplaintContactTitle");
+autocompleteField.bindAutocomplete("Customers", "Title"); // OM_ComplaintCustomerID is not on the companies list!?
 
-//SP.SOD.executeOrDelayUntilScriptLoaded(() => {
-//    // or wait untill csr has done its magic
-//    $(document).ready(() => {
-//        var autocompleteField = new OneMed.Customers.AutocompleteField("Customers", "OM_ComplaintCustomerName");
-//        autocompleteField.bindAutocomplete("OM_CustomerName", "OM_ComplaintCustomerID", "OM_CustomerID"); // OM_ComplaintCustomerID is not on the companies list!?
-//    });
-//}, "tahoe.init.js");
